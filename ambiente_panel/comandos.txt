@@ -1,0 +1,17 @@
+-- Mover al robot desde gazebo
+
+	- ign gazebo paneles.sdf
+        - ign topic -t "/commands/velocity" -m ignition.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"
+        
+        - Key Publisher
+        - ign topic -e -t /keyboard/keypress
+
+-- Mover al robot desde ros2
+	
+	- ros2 run ros_gz_bridge parameter_bridge /commands/velocity@geometry_msgs/msg/Twist@ignition.msgs.Twist
+	- ros2 topic pub /commands/velocity geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+	
+-- Ejemplo Rviz
+
+	- ros2 launch urdf_tutorial_r2d2 demo.launch.py
+	- rviz2 -d ~/second_ros2_ws/install/urdf_tutorial_r2d2/share/urdf_tutorial_r2d2/r2d2.rviz
