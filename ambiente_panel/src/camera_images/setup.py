@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'movement'
+package_name = 'camera_images'
 
 setup(
     name=package_name,
@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'random_twist_publisher = movement.random_twist_publisher:main',
-            'path_rutine = movement.path_rutine:main'
+        	'get_image = camera_images.get_image:main',
         ],
     },
 )

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/camera_images/camera_images.egg-info
+writing ../../build/camera_images/camera_images.egg-info/PKG-INFO
+writing dependency_links to ../../build/camera_images/camera_images.egg-info/dependency_links.txt
+writing entry points to ../../build/camera_images/camera_images.egg-info/entry_points.txt
+writing requirements to ../../build/camera_images/camera_images.egg-info/requires.txt
+writing top-level names to ../../build/camera_images/camera_images.egg-info/top_level.txt
+writing manifest file '../../build/camera_images/camera_images.egg-info/SOURCES.txt'
+reading manifest file '../../build/camera_images/camera_images.egg-info/SOURCES.txt'
+writing manifest file '../../build/camera_images/camera_images.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib/camera_images
+copying camera_images/__init__.py -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib/camera_images
+copying camera_images/get_image.py -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib/camera_images
+running install
+running install_lib
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images
+copying /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib/camera_images/__init__.py -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images
+copying /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/build/lib/camera_images/get_image.py -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images
+byte-compiling /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images/get_image.py to get_image.cpython-310.pyc
+running install_data
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/share/ament_index
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/share/ament_index/resource_index
+creating /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/share/ament_index/resource_index/packages
+copying resource/camera_images -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/share/ament_index/resource_index/packages
+copying package.xml -> /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/share/camera_images
+running install_egg_info
+Copying ../../build/camera_images/camera_images.egg-info to /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/python3.10/site-packages/camera_images-0.0.0-py3.10.egg-info
+running install_scripts
+Installing get_image script to /home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/install/camera_images/lib/camera_images
+writing list of installed files to '/home/shadoroca/Documentos/Academia/ServicioSocial/Ambiente-Paneles/ambiente_panel/build/camera_images/install.log'
