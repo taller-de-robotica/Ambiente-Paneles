@@ -4,13 +4,15 @@ from geometry_msgs.msg import Twist
 import random
 import time
 
-class RandomTwistPublisher(Node):
+class PathMovement(Node):
 
     def __init__(self):
         super().__init__('random_twist_publisher')
         self.publisher_ = self.create_publisher(Twist, 'commands/velocity', 10)
         timer_period = 1.0  # seconds
         #self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.clear_buffer()
+        time.sleep(10.0)
         self.make_rutine()
     
     def make_rutine(self):
@@ -22,6 +24,18 @@ class RandomTwistPublisher(Node):
             self.rotate(90,1)
             self.moveX(2)
             time.sleep(1.0)
+
+        
+
+    def clear_buffer(self):
+        msg = Twist()
+        msg.linear.x = 0
+        msg.linear.y = 0
+        msg.linear.z = 0
+        msg.angular.x = 0
+        msg.angular.y = 0
+        msg.angular.z = 0
+        self.publish_mesagge(msg)
 
 
     def moveX(self, distance, direction = 1):
@@ -52,7 +66,7 @@ class RandomTwistPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    node = RandomTwistPublisher()
+    node = PathMovement()
 
     try:
         rclpy.spin(node)

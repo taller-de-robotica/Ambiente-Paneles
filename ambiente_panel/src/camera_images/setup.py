@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
         	'get_image = camera_images.get_image:main',
+            'get_panel = camera_images.get_panels:main',
         ],
     },
 )
