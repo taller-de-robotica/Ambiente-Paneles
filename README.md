@@ -4,6 +4,13 @@ Desde ambiente_panel/src/
 
   `gz sim paneles.sdf`
 
+Si se tiene el cortafuegos ```uwf``` activado es necesario asegurarse de que ```multicast``` está permitido. [Instalation troubleshooting. Enable multicast.](https://docs.ros.org/en/rolling/How-To-Guides/Installation-Troubleshooting.html#enable-multicast)
+
+```
+sudo ufw allow in proto udp to 224.0.0.0/4
+sudo ufw allow in proto udp from 224.0.0.0/4
+```
+
 # Gazebo Bridge
 
 Desde el workspace del puente de gazebo correr
