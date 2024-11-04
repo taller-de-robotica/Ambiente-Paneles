@@ -24,7 +24,7 @@ class ImageListener(Node):
         cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
 
         # Muestra la imagen
-        cv2.imshow("Image from Ignition Gazebo", cv_image)
+        cv2.imshow("Image from Gazebo simulator", cv_image)
         cv2.waitKey(1)
 
 def main(args=None):

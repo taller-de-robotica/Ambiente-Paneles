@@ -1,17 +1,17 @@
 -- Mover al robot desde gazebo
 
-	- ign gazebo paneles.sdf
-        - ign topic -t "/commands/velocity" -m ignition.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"
+	- gz sim paneles.sdf
+        - gz topic -t "/commands/velocity" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"
         
         - Key Publisher
-        - ign topic -e -t /keyboard/keypress
+        - gz topic -e -t /keyboard/keypress
 
 -- Mover al robot desde ros2
 	
-	- ros2 run ros_gz_bridge parameter_bridge /commands/velocity@geometry_msgs/msg/Twist@ignition.msgs.Twist
+	- ros2 run ros_gz_bridge parameter_bridge /commands/velocity@geometry_msgs/msg/Twist@gz.msgs.Twist
 	- ros2 topic pub /commands/velocity geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
 	
 -- Puente para imágenes
 
-	- ros2 run ros_gz_bridge parameter_bridge '/camera@sensor_msgs/msg/Image@ignition.msgs.Image'
+	- ros2 run ros_gz_bridge parameter_bridge '/camera@sensor_msgs/msg/Image@gz.msgs.Image'
 	
