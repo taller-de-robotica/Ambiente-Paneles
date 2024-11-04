@@ -107,7 +107,7 @@ class PathMovement(Node):
         self.get_panel(cv_image)
 
     def get_panel(self, image):
-        final_cotours = []
+        final_contours = []
 
         # Convertir a escala de grises
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -121,7 +121,7 @@ class PathMovement(Node):
             epsilon = 0.02 * cv2.arcLength(contour, True)  # tolerancia
             simplified_contour = cv2.approxPolyDP(contour, epsilon, True)
             if len(simplified_contour) == 4:
-                final_cotours.append(simplified_contour)
+                final_contours.append(simplified_contour)
                 cv2.drawContours(image, [simplified_contour], 0, (0, 0, 255), 3)
 
         hit = False
@@ -130,7 +130,7 @@ class PathMovement(Node):
         radius = 45
 
         # Detectar colision
-        for contour in final_cotours:
+        for contour in final_contours:
             left_hits = 0
             right_hits = 0
             for point in contour:
