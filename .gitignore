@@ -1,8 +1,13 @@
-devel/
-logs/
-build/
-bin/
-lib/
+# Dependencias
+**/ros_gz
+
+# Compilación
+**/devel/
+**/log/
+**/logs/
+**/build/
+**/bin/
+**/lib/
 msg_gen/
 srv_gen/
 msg/*Action.msg

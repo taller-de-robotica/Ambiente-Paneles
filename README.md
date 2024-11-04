@@ -13,7 +13,12 @@ sudo ufw allow in proto udp from 224.0.0.0/4
 
 # Gazebo Bridge
 
-Desde el workspace del puente de gazebo correr
+Instalar el puente para Gazebo:
+```
+sudo apt install ros-jazzy-ros_gz
+```
+
+Correr
 
   `ros2 run ros_gz_bridge parameter_bridge /commands/velocity@geometry_msgs/msg/Twist@ignition.msgs.Twist`
 
@@ -29,14 +34,14 @@ Desde ambiente_panel/ correr el nodo
 
 # Simulacion 
 cd ambiente_panel/src
-ign gazebo paneles.sdf
+gz sim paneles.sdf
 
-# En diferentes terminales con source /opt/ros2/humble:
+# En diferentes terminales con source /opt/ros2/jazzy:
 
 # 1) Puente comandos de movimiento
 ros2 run ros_gz_bridge parameter_bridge /commands/velocity@geometry_msgs/msg/Twist@ignition.msgs.Twist 
 
-# 2) Puente topico de la camara
+# 2) Puente tópico de la camara
 ros2 run ros_gz_bridge parameter_bridge '/camera@sensor_msgs/msg/Image@ignition.msgs.Image'
 
 # 3) Puente del "odometro" de la kobuki

@@ -7,7 +7,7 @@
 # since a plain shell script can't determine its own path when being sourced
 # either use the provided COLCON_CURRENT_PREFIX
 # or fall back to the build time prefix (if it exists)
-_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/mnt/bee2a7be-5fc2-43c4-86b6-06b29f433e60/blackzafiro/Programas/Robots/ROS/Ambiente-Paneles/ambiente_panel/install
+_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX=/mnt/bee2a7be-5fc2-43c4-86b6-06b29f433e60/blackzafiro/Programas/Robots/ROS/Ambiente-Paneles/install
 if [ ! -z "$COLCON_CURRENT_PREFIX" ]; then
   _colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX="$COLCON_CURRENT_PREFIX"
 elif [ ! -d "$_colcon_prefix_chain_sh_COLCON_CURRENT_PREFIX" ]; then
