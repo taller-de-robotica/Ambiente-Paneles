@@ -2,7 +2,7 @@
 
 Desde ambiente_panel/src/
 
-  `ign gazebo paneles.sdf`
+  `gz sim paneles.sdf`
 
 # Gazebo Bridge
 
